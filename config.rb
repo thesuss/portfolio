@@ -1,7 +1,7 @@
 ###
 # Page options, layouts, aliases and proxies
 ###
-
+require 'extensions/build_cleaner'
 # Per-page layout changes:
 #
 # With no layout
@@ -21,6 +21,11 @@ page '/*.txt', layout: false
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+end
+
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.deploy_method = :git
 end
 
 ###
