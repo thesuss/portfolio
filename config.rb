@@ -45,6 +45,7 @@ configure :build do
   # activate :minify_css
   activate :relative_assets
   activate :build_cleaner
+  set :site_url, "/portfolio"
   # Minify Javascript on build
   # activate :minify_javascript
 end
