@@ -1,0 +1,6 @@
+.projects
+  .row
+    - data.projects.each do |project|
+      .col-md-4
+        %h4= project[:name]
+        %p= project[:description]
