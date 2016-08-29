@@ -2,5 +2,7 @@
 %html
   = partial 'partials/head'
   %body{:class => page_classes}
+  .container
+    = partial 'partials/nav'
     = yield
     = partial 'partials/footer'
