@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 /**
  * Foundation for Sites by ZURB
  * Version 6.2.3
@@ -11,6 +11,7 @@
    * 2. Prevent iOS and IE text size adjust after device orientation change,
    *    without disabling user zoom.
    */
+
 html {
   font-family: sans-serif;
   /* 1 */
