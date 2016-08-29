@@ -1,3 +1,2 @@
 // This is where it all goes :)
-$(document).foundation()
-;
+$(function(){ $(document).foundation(); });
