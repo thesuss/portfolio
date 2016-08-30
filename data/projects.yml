@@ -1,5 +1,15 @@
-- name: My First Website
-  description: Simple HTML5 site I've build during the PrepCourse
-
 - name: FizzBuzz
-  description: My first Test driven ruby project
+  description: My first test driven ruby project
+  url: https://thesuss.github.io/fizz_buzz_js/
+
+- name: BMI-Calculator
+  description: My first JavaScript project
+  url: https://thesuss.github.io/BMI-challenge/
+
+- name: ATM-Challenge
+  description: A simple Ruby program that simulates an ATM.
+  url: https://github.com/thesuss/ATM2
+
+- name: This portfolio page
+  description: Portfolio project, HAML/SASS.
+  url: "#"
