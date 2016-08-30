@@ -16,4 +16,10 @@ describe 'projects', type: :feature do
     end
   end
 
+  it 'displays an image by at least one project' do
+    expect(page).to have_css("img[src*='proj']")
+  end
+
+
+
 end

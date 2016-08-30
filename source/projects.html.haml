@@ -1,6 +1,9 @@
 .project-list
   .row
+    - n = 1
     - data.projects.each do |project|
       .col-md-4
+        =image_tag "/images/proj" + n.to_s + ".jpg"
         %h4= project[:name]
         %p= project[:description]
+        - n = n + 1
