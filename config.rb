@@ -49,3 +49,10 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+
+helpers do
+  def is_page_active(page)
+    current_page.url == page ? {:class => 'is-active'} : {}
+  end
+end

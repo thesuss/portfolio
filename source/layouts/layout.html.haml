@@ -4,7 +4,10 @@
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
     %meta{:charset => "utf-8"}/
     %meta{:content => "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", :name => "viewport"}/
-    %title= yield(:title)
+    - if content_for?(:title)
+      %title= yield_content :title
+    - else
+      %title 'No title'
     = partial 'partials/head'
     %body{:class => page_classes}
       .container-fluid
