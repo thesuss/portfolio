@@ -1,3 +1,4 @@
+require 'rspec'
 require 'spec_helper'
 require 'capybara'
 
@@ -7,8 +8,8 @@ describe 'index', type: :feature do
     visit '/'
   end
 
-  it 'says hello to visitor' do
-    expect(page).to have_content 'Middleman'
+  it 'says welcome to visitor' do
+    expect(page).to have_content 'Welcome to muy portfolio'
   end
 
   it 'renders footer partial' do
