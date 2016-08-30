@@ -9,7 +9,11 @@ describe 'index', type: :feature do
   end
 
   it 'says welcome to visitor' do
-    expect(page).to have_content 'Welcome to muy portfolio'
+    expect(page).to have_content 'Welcome to my portfolio'
+  end
+
+  it 'has link to projects' do
+    expect(page).to have_link("See them »", href: '/projects.html')
   end
 
   it 'renders footer partial' do
