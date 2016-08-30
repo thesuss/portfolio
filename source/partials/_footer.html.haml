@@ -1,12 +1,22 @@
-%footer
-  .jumbotron
-    .row
-      .col-md-4
-        %h3 My Portfolio
-        %p Built using the awesome Middleman framework
-      .col-md-4
-        %h3 My Portfolio
-        %p Built using the awesome Middleman framework
-      .col-md-4
-        %h3 My Portfolio
-        %p Built using the awesome Middleman framework
+%footer#footer
+  .container
+    .col-md-8
+      %p.copyright
+        My Portfolio:
+        %span
+        Built using the awesome Middleman framework
+    .col-md-4
+      / Social Media
+      %ul.social
+        %li
+          %a.Facebook{:href => "http://wwww.fb.com/susscreations"}
+            %i.ion-social-facebook
+        %li
+          %a.Twitter{:href => "http://wwww.twitter.com/susscreations"}
+            %i.ion-social-twitter
+        %li
+          %a.Linkedin{:href => "#"}
+            %i.ion-social-linkedin
+        %li
+          %a.Google.Plus{:href => "http://wwww.fb.com/susscreations"}
+            %i.ion-social-googleplus
