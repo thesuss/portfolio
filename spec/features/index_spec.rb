@@ -8,12 +8,12 @@ describe 'index', type: :feature do
     visit '/'
   end
 
-  it 'says welcome to visitor' do
-    expect(page).to have_content 'Welcome to my portfolio'
+  it 'says who I am' do
+    expect(page).to have_content 'MY NAME IS SUSANNA'
   end
 
   it 'has link to projects' do
-    expect(page).to have_link("See them »", href: '/projects.html')
+    expect(page).to have_link("View projects »", href: '/projects.html')
   end
 
   it 'renders footer partial' do
