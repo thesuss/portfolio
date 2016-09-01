@@ -33,11 +33,13 @@ end
 ###
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+
+helpers do
+  def is_page_active(page)
+    current_page.url == page ? {class: 'active'} : {}
+  end
+end
+
 
 # Build-specific configuration
 configure :build do
@@ -48,11 +50,4 @@ configure :build do
   set :site_url, "/portfolio"
   # Minify Javascript on build
   # activate :minify_javascript
-end
-
-
-helpers do
-  def is_page_active(page)
-    current_page.url == page ? {:class => 'is-active'} : {}
-  end
 end

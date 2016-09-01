@@ -14,10 +14,10 @@
         .col-sm-4.col-xs-12
           %figure.wow.fadeInLeft.animated.portfolio-item{"data-wow-delay" => "0ms", "data-wow-duration" => "500ms"}
             .img-wrapper
-              %img.img-responsive{:alt => "#{project[:name]}", :src => "images/proj" + n.to_s + ".jpg"}/
+              = image_tag "images/proj" + n.to_s + ".jpg", class: 'img-responsive'
               .overlay
                 .buttons
-                  %a.fancybox{:href => "images/proj" + n.to_s + ".jpg", :rel => "gallery"} Show
+                  = link_to "Show", "images/proj" + n.to_s + ".jpg", rel: "gallery", class: "fancybox"
                   = link_to "Github", project[:url], target: "_blank"
             %figcaption
               %h4= project[:name]

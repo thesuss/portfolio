@@ -11,40 +11,20 @@
         / /responsive nav button
         / logo
         .navbar-brand
-          %a{:href => "index.html"}
-            %img{:alt => "", :src => "images/logo.png"}/
+          = link_to "index.html" do
+            = image_tag "images/logo.png"
         / /logo
       / main menu
       %nav.collapse.navbar-collapse.navbar-right{:role => "navigation"}
         .main-menu
           %ul.nav.navbar-nav.navbar-right
+            %li{ is_page_active('/') }
+              = link_to 'Home', '/'
             %li
-              %a{:href => "index.html"} Home
+              = link_to "About", "about.html"
             %li
-              %a{:href => "about.html"} About
+              = link_to "Projects", "projects.html"
             %li
-              %a{:href => "service.html"} Service
-            %li.dropdown
-              %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-                Pages
-                %span.caret
-              .dropdown-menu
-                %ul
-                  %li
-                    %a{:href => "404.html"} 404 Page
-                  %li
-                    %a{:href => "gallery.html"} Gallery
-            %li.dropdown
-              %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-                Blog
-                %span.caret
-              .dropdown-menu
-                %ul
-                  %li
-                    %a{:href => "blog-fullwidth.html"} Blog Full
-                  %li
-                    %a{:href => "blog-left-sidebar.html"} Blog Left sidebar
-                  %li
-                    %a{:href => "blog-right-sidebar.html"} Blog Right sidebar
+              = link_to "Blog", "#"
             %li
-              %a{:href => "contact.html"} Contact
+              = link_to "Contact", "contact.html"

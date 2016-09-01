@@ -9,14 +9,10 @@
       / Social Media
       %ul.social
         %li
-          %a.Facebook{:href => "http://wwww.fb.com/susscreations"}
-            %i.ion-social-facebook
+          = link_to '<i class="ion-social-facebook"></i>'.html_safe, "http://wwww.facebook.com/susscreations", class: 'Facebook'
         %li
-          %a.Twitter{:href => "http://wwww.twitter.com/susscreations"}
-            %i.ion-social-twitter
+          = link_to '<i class="ion-social-twitter"></i>'.html_safe, "http://wwww.twitter.com/susscreations", class: 'Twitter'
         %li
-          %a.Linkedin{:href => "#"}
-            %i.ion-social-linkedin
+          = link_to '<i class="ion-social-linkedin"></i>'.html_safe, "#", class: 'Linkedin'
         %li
-          %a.Google.Plus{:href => "http://wwww.fb.com/susscreations"}
-            %i.ion-social-googleplus
+          = link_to '<i class="ion-social-googleplus"></i>'.html_safe, "#", class: 'Google Plus'

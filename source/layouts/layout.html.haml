@@ -13,10 +13,11 @@
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-83419756-1', 'auto');
       ga('send', 'pageview');
-  
-    %body{:class => page_classes}
+
+    %body{class: page_classes}
       .container-fluid
         = partial 'partials/header'
         = yield
-        = partial 'partials/cta'
+        - if current_page != "contact.html" then
+          = partial 'partials/cta'
         = partial 'partials/footer'
