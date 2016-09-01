@@ -1,5 +1,23 @@
 - @title = "Contact"
 = partial 'partials/pagetop'
-%h3.subtitle.wow.fadeInUp{"data-wow-delay" => ".3s", "data-wow-duration" => "500ms"} Maila mig
+%h3.subtitle.wow.fadeInUp{"data-wow-delay" => ".3s", "data-wow-duration" => "500ms"} Ways to get in contact:
 %p.wow.fadeInUp{"data-wow-delay" => ".5s", "data-wow-duration" => "500ms"}
-  = mail_to 'webb@susscreations.se', "webb@susscreations.se"
+  = link_to '<i class="ion-social-facebook"></i> <span>Facebook</span>'.html_safe,
+  "http://wwww.facebook.com/susscreations",
+  class: 'Facebook'
+%p.wow.fadeInUp{"data-wow-delay" => ".6s", "data-wow-duration" => "500ms"}
+  = link_to '<i class="ion-social-twitter"></i>  <span>Twitter</span>'.html_safe,
+  "http://wwww.twitter.com/susscreations",
+  class: 'Twitter'
+%p.wow.fadeInUp{"data-wow-delay" => ".7s", "data-wow-duration" => "500ms"}
+  = link_to '<i class="ion-social-linkedin"></i> <span>Linkedin</span>'.html_safe,
+  "#",
+  class: 'Linkedin'
+%p.wow.fadeInUp{"data-wow-delay" => ".8s", "data-wow-duration" => "500ms"}
+  = link_to '<i class="ion-social-googleplus"></i> <span>Google Plus</span>'.html_safe,
+  "#",
+  class: 'Google Plus'
+%p.wow.fadeInUp{"data-wow-delay" => ".9s", "data-wow-duration" => "500ms"}
+  = link_to '<i class="ion-email"></i> <span>Send Email</span>'.html_safe,
+  "mailto:webb@susscreations.se",
+  class: 'Email'
