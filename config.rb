@@ -17,6 +17,9 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 # General configuration
+set :relative_links, true
+activate :directory_indexes
+activate :i18n, mount_at_root: :false
 
 # Reload the browser automatically whenever files change
 configure :development do
