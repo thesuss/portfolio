@@ -9,9 +9,9 @@ describe 'projects', type: :feature do
     end
 
   it 'displays project list' do
-    expect(page).to have_css '.project-list'
-    within '.project-list' do
-      expect(page).to have_content 'My First Website'
+    expect(page).to have_css '.stuff'
+    within '.stuff' do
+      expect(page).to have_content 'BMI-Calculator'
       expect(page).to have_content 'FizzBuzz'
     end
   end

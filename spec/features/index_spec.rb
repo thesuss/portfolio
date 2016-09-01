@@ -13,7 +13,7 @@ describe 'index', type: :feature do
   end
 
   it 'has link to projects' do
-    expect(page).to have_link("View projects »", href: '/projects.html')
+    expect(page).to have_link("View projects »", href: 'projects.html')
   end
 
   it 'renders footer partial' do
