@@ -11,7 +11,7 @@
         / /responsive nav button
         / logo
         .navbar-brand
-          = link_to "index.html" do
+          = link_to "/index.html" do
             = image_tag "images/logo.png"
         / /logo
       / main menu
@@ -21,10 +21,10 @@
             %li{ is_page_active('/') }
               = link_to 'Home', '/'
             %li
-              = link_to "About", "about.html"
+              = link_to "About", "/about.html"
             %li
-              = link_to "Projects", "projects.html"
+              = link_to "Projects", "/projects.html"
             %li
               = link_to "Blog", "#"
             %li
-              = link_to "Contact", "contact.html"
+              = link_to "Contact", "/contact.html"
