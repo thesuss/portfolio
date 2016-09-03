@@ -43,6 +43,10 @@ helpers do
   end
 end
 
+activate :blog do |blog|
+  blog.prefix = "blog"
+  blog.sources = "blog/{year}-{month}-{day}-{title}.html"
+end
 
 # Build-specific configuration
 configure :build do
