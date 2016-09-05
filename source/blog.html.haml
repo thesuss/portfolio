@@ -1,0 +1,8 @@
+- @title = "Bloggen"
+= partial 'partials/pagetop'
+#blog
+  - blog.articles.each do |article, i|
+    %article{:class => "#{(i == 0) ? 'first' : ''}"}
+      %h1= article.title
+      %span= article.date.strftime('%b %e %Y')
+      = article.body

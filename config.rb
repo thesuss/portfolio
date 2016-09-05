@@ -2,6 +2,7 @@
 # Page options, layouts, aliases and proxies
 ###
 require 'extensions/build_cleaner'
+require 'pry'
 # Per-page layout changes:
 #
 # With no layout
@@ -44,8 +45,11 @@ helpers do
 end
 
 activate :blog do |blog|
-  blog.prefix = "blog"
-  blog.sources = "blog/{year}-{month}-{day}-{title}.html"
+  #blog.prefix = "blog"
+  blog.sources = "{year}-{month}-{day}-{title}"
+  blog.default_extension = ".md"
+  blog.tag_template = "tag.html"
+  blog.calendar_template = "calendar.html"
 end
 
 # Build-specific configuration

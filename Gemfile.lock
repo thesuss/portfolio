@@ -9,6 +9,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.4.0)
     backports (3.6.8)
+    builder (3.2.2)
     capybara (2.8.1)
       addressable
       mime-types (>= 1.16)
@@ -166,6 +167,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  builder
   capybara
   haml
   launchy
