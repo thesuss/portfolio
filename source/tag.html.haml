@@ -3,6 +3,8 @@ pageable: true
 per_page: 12
 ---
 - @title = "Tags"
+= partial 'partials/pagetop'
+
 %h1
   Articles tagged '#{tagname}'
 - if paginate && num_pages > 1
